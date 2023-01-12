@@ -1,0 +1,48 @@
+{
+	"name": "chrome-coverage",
+	"version": "0.0.1",
+	"license": "MIT",
+	"author": {
+		"name": "Thorsten Roggendorf",
+		"email": "floss@schrotie.de",
+		"url": "http://schrotie.de"
+	},
+	"description": "Tiny, powerful data binding & web application framework",
+	"homepage": "https://github.com/schrotie/chrome-coverage#readme",
+	"bugs": {
+		"url": "https://github.com/shrotie/chrome-coverage/issues",
+		"email": "floss@schrotie.de"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/schrotie/chrome-coverage"
+	},
+	"files": [
+		"src/**",
+		"chrome-coverage.mjs",
+		"chrome-coverage.min.mjs",
+		"README.md"
+	],
+	"directories": {
+		"src": "src"
+	},
+	"keywords": [
+		"browser",
+		"javascript",
+		"library",
+		"test"
+	],
+	"browser": "chrome-coverage.mjs",
+	"exports": "./chrome-coverage.mjs",
+	"devDependencies": {
+		"@rollup/plugin-node-resolve": "latest",
+		"eslint": "^8.4.1",
+		"eslint-config-google": "^0.7.1",
+		"rollup": "latest"
+	},
+	"scripts": {
+		"build": "rollup --config rollup.config.mjs",
+		"lint": "eslint . --ext js,html --ignore-path .gitignore",
+		"prepare": "npm run build"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"extends": ["eslint:recommended", "google"],
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+  "rules": {
+		"array-bracket-spacing":"off",
+		"arrow-parens": "off",
+		"brace-style": "off",
+		"eol-last":"off",
+		"key-spacing":"off",
+		"keyword-spacing": "off",
+		"max-len": ["error", {"ignorePattern": "^import\\s", "tabWidth": 3}],
+		"max-lines-per-function": ["error", 11],
+		"new-cap": ["error"],
+		"no-empty":"off",
+		"no-multi-spaces":"off",
+		"no-tabs": "off",
+		"no-var": "off",
+		"one-var": "off",
+		"padded-blocks":"off",
+		"require-jsdoc": "off"
+  }
+}
